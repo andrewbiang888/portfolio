@@ -10,7 +10,7 @@ body {
   z-index: 2;
 }
 
-.magic-container2 {
+.magic-container3 {
   visibility: hidden;
   display: none;
 }
@@ -212,6 +212,42 @@ footer p.social a:hover {
 }
 
 
+/*iPhone*/
+
+#iphone-dute-screen {
+  background-color: white;
+
+}
+
+#iphone-dute-screen h1 {
+  position:relative;
+  padding:10px 20px;
+  color:white;
+  background:#0B93F6;
+  border-radius:25px;
+  float: right;
+}
+
+#iphone-dute-screen h2 {
+  position:relative;
+	padding:10px 20px;
+	background:#E5E5EA;
+	border-radius:25px;
+	color: black;
+  float: left;
+}
+
+.modal-content,
+.modal-header,
+.modal-body {
+  color: #0d0f05;
+  background-color: white;
+}
+
+.modal-body a {
+  color: #f77e5e;
+}
+
 
 /*DEVICE RESPONSIVE*/
 
@@ -220,7 +256,7 @@ footer p.social a:hover {
   .magic-container {
       display: none;
   }
-  .magic-container2 {
+  .magic-container3 {
     visibility: visible;
   }
 

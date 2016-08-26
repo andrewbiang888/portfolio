@@ -2,11 +2,11 @@
 
 /*GENERAL*/
 body {
-  background-color: transparent;
-  background-image: url('../img/space1.gif') !important;
+  background-color: #2f292b;
+  /*background-image: url('../img/space1.gif') !important;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: center;
+  background-position: center;*/
   z-index: 2;
 }
 
@@ -25,6 +25,14 @@ body {
   border-radius: 0;
 }
 
+.navbar-brand {
+  color: white;
+  font-family: Roboto:
+}
+
+.navbar-brand:hover {
+  color: #2f292b;
+}
 
 
 /*BODY*/
@@ -65,11 +73,21 @@ body::after {
   z-index: 1;
 }
 
+body::after:hover {
+
+}
+
+
 
 
 .jumbotron {
-  background: url('../img/space.gif') no-repeat;
-  background-size: cover;
+  /*background: url('../img/space.gif') no-repeat;
+  background-size: cover;*/
+  background-color: black;
+  /*background-color:black;*/
+  background-image:radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   min-height: 400px;
   font-size: 4em;
   top: 0;
@@ -78,10 +96,19 @@ body::after {
 
 .jumbotron .container h1 {
   color: white;
-  font-size: 4em;
+  font-size: 18vw;
   transform: rotate(-10deg);
   -ms-transform: rotate(-10deg); /* IE 9 */
   -webkit-transform: rotate(-10deg);
+  border-bottom: solid white 5px;
+}
+
+.jumbotron .container h2 {
+  color: #f45844;
+  font-size: 8vw;
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg);
   border-bottom: solid white 5px;
 }
 

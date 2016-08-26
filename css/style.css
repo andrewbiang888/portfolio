@@ -10,9 +10,9 @@ body {
   z-index: 2;
 }
 
-.magic-container3 {
-  visibility: hidden;
-  display: none;
+
+.row {
+  margin-bottom: 1em;
 }
 
 
@@ -44,7 +44,7 @@ body::before {
   position:fixed;
   display: block;
   font-weight:bolder;
-  font-size: 20vw;
+  font-size: 10vw;
   /*float: left;
   right: 70%;
   bottom: 1%;*/
@@ -73,9 +73,6 @@ body::after {
   z-index: 1;
 }
 
-body::after:hover {
-
-}
 
 
 
@@ -85,13 +82,26 @@ body::after:hover {
   background-size: cover;*/
   background-color: black;
   /*background-color:black;*/
-  background-image:radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  /*background-image:radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);*/
+  /*background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
   min-height: 400px;
   font-size: 4em;
   top: 0;
   border-bottom: solid black 5px;
+}
+
+.jumbotron::after {
+  content: "君不见黄河之水天上来，奔流到海不复回。君不见高堂明镜悲白发，朝如青丝暮成雪。人生得意须尽欢，莫使金樽空对月。天生我材必有用，千金散尽还复来。烹羊宰牛且为乐，会须一饮三百杯。岑夫子，丹丘生，将进酒，君莫停。与君歌一曲，请君为我侧耳听。钟鼓馔玉不足贵，但愿长醉不愿醒。古来圣贤皆寂寞，惟有饮者留其名。陈王昔时宴平乐，斗酒十千恣欢谑。主人何为言少钱，径须沽取对君酌。五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。";
+  color: rgba(165,166,169, .1);
+  z-index: -2;
+  font-size: 7vw;
+
+  position:fixed;
+  display: block;
+  font-weight:bolder;
+  top: 5px;
+  left: 5px;
 }
 
 .jumbotron .container h1 {
@@ -110,6 +120,10 @@ body::after:hover {
   -ms-transform: rotate(10deg); /* IE 9 */
   -webkit-transform: rotate(10deg);
   border-bottom: solid white 5px;
+}
+
+.jumbotron .container h3 {
+
 }
 
 /*.jumbotron .eyeseeyou {
@@ -140,6 +154,7 @@ body::after:hover {
 
 h1#iphone-text {
   color: white;
+  font-size: 2em;
 }
 
 .md-landscape {
@@ -213,8 +228,8 @@ footer p.social a:hover {
 
 
 /*iPhone*/
-
-
+.magic-container,
+.container-center,
 .iphone-dute,
 .magic-container2 {
   display: block;
@@ -246,6 +261,14 @@ footer p.social a:hover {
   float: left;
 }
 
+.iphone-dute .md-iphone-5 {
+  font-size: 2em;
+
+}
+
+
+
+/*MODAL*/
 .modal-content,
 .modal-header,
 .modal-body {
@@ -261,12 +284,22 @@ footer p.social a:hover {
 /*DEVICE RESPONSIVE*/
 
 /*iphone5 verticle width - iphone 6 plus horrizontal width */
-@media screen and (max-width: 1000px){
-  .magic-container {
-      display: none;
+@media screen and (min-width: 671px){
+  .magic-container,
+  .md-iphone-5 {
+    margin: auto auto;
   }
-  .magic-container3 {
-    visibility: visible;
+
+
+}
+
+@media screen and (max-width: 670px) {
+  .iphone-dute .md-iphone-5 {
+    font-size: 1em;
+  }
+  .magic-container,
+  .md-iphone-5 {
+    margin: auto auto;
   }
 
 }

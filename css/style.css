@@ -214,6 +214,15 @@ footer p.social a:hover {
 
 /*iPhone*/
 
+
+.iphone-dute,
+.magic-container2 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
 #iphone-dute-screen {
   background-color: white;
 

@@ -178,7 +178,10 @@ h1#iphone-text {
   margin: 10px 10px;
 }
 
-
+.btn-transparent img {
+  width: 60px;
+  height: 60px;
+}
 
 /*#triangles svg {
   position: absolute;
@@ -318,3 +321,5 @@ footer {
   }
 
 }
+
+/*SOCIAL*/

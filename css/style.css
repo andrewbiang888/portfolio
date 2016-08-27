@@ -2,7 +2,7 @@
 
 /*GENERAL*/
 body {
-  background-color: #2f292b;
+  background-color: white;
   /*background-image: url('../img/space1.gif') !important;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -13,6 +13,12 @@ body {
 
 .row {
   margin-bottom: 1em;
+}
+
+#aboutme {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 3em;
 }
 
 
@@ -78,13 +84,14 @@ body::after {
 
 
 .jumbotron {
-  /*background: url('../img/space.gif') no-repeat;
-  background-size: cover;*/
-  background-color: black;
+  background: url('../img/t.benderpic1.jpg') no-repeat;
+  background-size: cover;
+  /*background-image: url('../img/t.benderpic1.jpg') no-repeat;*/
   /*background-color:black;*/
   /*background-image:radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);*/
   /*background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
+  width: 100%;
   min-height: 400px;
   font-size: 4em;
   top: 0;
@@ -152,9 +159,19 @@ body::after {
   color: black;
 }
 
+#text-center {
+  text-align: center;
+}
+
+.border-bottom {
+  border-bottom: .5px solid rgba(47,41,43, .3);
+  text-align: center;
+}
+
 h1#iphone-text {
-  color: white;
+  color: rgb(47,41,43);
   font-size: 2em;
+  text-align: center;
 }
 
 .md-landscape {
@@ -191,6 +208,7 @@ h1#iphone-text {
 p.copyright {
   text-align: baseline;
   float: left;
+  color: black;
 }
 
 /* Add a gray background color and some padding to the footer */
@@ -201,30 +219,7 @@ footer {
 
 
 
-footer p.social {
-  font-size: 18px;
-  float: right;
-}
 
-footer p.social a {
-  padding: 0 3px;
-  border-color: transparent;
-}
-
-footer p.social a:hover {
-  color: #6868DA;
-}
-@media screen and (max-width: 600px) {
-
-  footer {
-    text-align: center;
-  }
-
-  footer p.copyright, footer p.social {
-    float: none;
-    padding: 0;
-  }
-}
 
 
 /*iPhone*/
@@ -262,10 +257,25 @@ footer p.social a:hover {
 }
 
 .iphone-dute .md-iphone-5 {
-  font-size: 2em;
+  font-size: 1.5em;
 
 }
 
+.md-iphone-5 .md-screen {
+  background-color: white;
+}
+
+.iphone-yi span {
+  color: orange;
+}
+
+.font-control {
+  font-size: 1.5em;
+}
+
+.font-control li {
+  list-style: none;
+}
 
 
 /*MODAL*/
@@ -295,6 +305,11 @@ footer p.social a:hover {
 
 @media screen and (max-width: 670px) {
   .iphone-dute .md-iphone-5 {
+    font-size: 1em;
+  }
+  .iphone-dute h1,
+  .iphone-dute h2,
+  .iphone-dute h3 {
     font-size: 1em;
   }
   .magic-container,

@@ -1,0 +1,52 @@
+CACHE MANIFEST
+
+# Cache manifest version 0.0.1
+CACHE
+
+img/aeflav.png
+css/style.css
+
+NETWORK
+https://andrewbiang888.github.io/portfolio/
+
+FALLBACK
+
+img/seoapplogo.png
+img/seoupdates.png
+
+{
+  "short_name": "SEO Updates",
+  "name": "Andrew's Mobile Web App for SEO Updates",
+  "description": "Stay up-to-date on SEO best practices!",
+  "icons": [
+    {
+      "src": "img/aeflav.png",
+      "sizes": "48x48",
+      "type": "image/webp"
+    },
+    {
+      "src": "img/aeflav.png",
+      "sizes": "120x120",
+      "type": "image/webp"
+    },
+    {
+      "src": "img/aeflav.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/aeflav.png",
+      "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+      "src": "img/aeflav.png",
+      "sizes": "72x72"
+    }
+  ]
+,
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "scope": "/myapp/",
+  "theme_color": "aliceblue",
+  "orientation": "portrait"
+}

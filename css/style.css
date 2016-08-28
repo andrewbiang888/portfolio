@@ -86,6 +86,7 @@ body::after {
 .jumbotron {
   background: url('../img/t.benderpic1.jpg') no-repeat;
   background-size: cover;
+  background-position: right;
   /*background-image: url('../img/t.benderpic1.jpg') no-repeat;*/
   /*background-color:black;*/
   /*background-image:radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);*/
@@ -118,6 +119,7 @@ body::after {
   -ms-transform: rotate(-10deg); /* IE 9 */
   -webkit-transform: rotate(-10deg);
   border-bottom: solid white 5px;
+  margin-top: 1em;
 }
 
 .jumbotron .container h2 {
@@ -127,11 +129,9 @@ body::after {
   -ms-transform: rotate(10deg); /* IE 9 */
   -webkit-transform: rotate(10deg);
   border-bottom: solid white 5px;
+  margin-top: .5em;
 }
 
-.jumbotron .container h3 {
-
-}
 
 /*.jumbotron .eyeseeyou {
   background-image: url('../img/andreweseo.png');
@@ -158,6 +158,9 @@ body::after {
 .jumbotron button a:hover {
   color: black;
 }
+
+
+
 
 #text-center {
   text-align: center;
@@ -278,7 +281,15 @@ footer {
 
 .font-control li {
   list-style: none;
+  font-size: .75em;
 }
+
+.job-experience ol {
+  margin-left: 4px;
+
+}
+
+
 
 
 /*MODAL*/
@@ -319,6 +330,7 @@ footer {
   .md-iphone-5 {
     margin: auto auto;
   }
+
 
 }
 
